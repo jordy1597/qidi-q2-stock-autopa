@@ -1,6 +1,7 @@
 # Material-class PA database for a stock QIDI Q2.
-# This extra intentionally has no QIDI Box, display, RFID, or filament-change
-# hooks.  Automatic material lookup is added only in a later phase.
+# QIDI Box actions are exposed only through explicit manual commands.  Automatic
+# material lookup may apply a known stored value, but never starts calibration
+# or triggers filament motion by itself.
 import configparser
 import os
 import re
